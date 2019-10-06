@@ -1,0 +1,41 @@
+#canv {
+    width: 1000px; 
+    height: 800px; 
+    border: 3px solid black
+}
+
+body {
+    display: grid;
+    justify-content: center;
+}
+
+.header{
+    width: 1000px;
+    margin: 10px;
+}
+
+.tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.buttonWrap{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+.tool-button{
+    border-radius: 10px;
+    background-color: silver;
+}
+
+.selectedToolsWrap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>CanvasPainter</title>
+    <link rel="stylesheet" href="styles/canvas.css" />
+  </head>
+  <body>
+
+  <div class="header">
+    <div class="tools">
+
+      <div class="buttonWrap">
+        <h3> Tools:</h3>
+        <button class="tool-button" data-name="brush">Brush</button>
+        <button class="tool-button" data-name="line">Line</button>
+        <button class="tool-button" data-name="rectangle">Rectangle</button>
+        <button class="tool-button" data-name="circle">Circle</button>
+        <button class="tool-button" data-name="clear-all">Clear all</button>
+      </div>
+
+      <div class="selectedToolsWrap">
+        <h3> Select:</h3>
+        <div class="selectedSize">
+          <label for="select-size">Size:</label>
+          <select id="select-size" >
+          <option>5</option>
+          <option>10</option>
+          <option>15</option>
+          <option>20</option>
+          </select>
+        </div>
+
+        <div class="selectedColor">
+          <label for="select-color">Color:</label>
+          <input type="color" id="select-color" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="canv">
+    <canvas id="canv" width="1000" height="800"></canvas>
+  </div>
+
+  <div class="footer">
+    <sup>Coordinates:</sup>
+    <sup id="x">x:<span id="x-coord"></span></sup>
+    <sup id="y">y:<span id="y-coord"></span></sup>
+  </div>
+
+
+    <script src="scripts/canvas.js"></script>
+  </body>
+</html>
